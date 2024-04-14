@@ -1,7 +1,13 @@
+import About from "./components/About";
+import Info from "./components/Info";
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <Navbar />
+      <Info />
+      <About />
     </div>
   );
 }
