@@ -10,5 +10,35 @@
 
 * {
   font-family: "futuram";
-  
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.parallax {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  color: white;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.parallax .scroller {
+  font-size: 1.468rem;
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.parallax span {
+  display: block;
+  margin-right: 30px;
+}
+
+.text-scroller span {
+  display: inline-block;
 }
