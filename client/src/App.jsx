@@ -1,13 +1,18 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Info from "./components/Info";
+import Loop from "./components/Loop";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div>
+    <div >
       <Navbar />
-      <Info />
-      <About />
+      <Info />  
+       <Loop/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
