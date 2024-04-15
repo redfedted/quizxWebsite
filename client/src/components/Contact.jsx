@@ -7,8 +7,8 @@ function Contact() {
         <button className="">Human assistance</button>
       </div>
       <h1 className="text-white text-[1.25rem]">
-        Connect with our CEO for personalized guidance on integrating QuizX into
-        your educational ecosystem.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta
+        assumenda ex ipsa nostrum aliquid repellat enim eum nemo tempora.
       </h1>
     </div>
   );
