@@ -1,3 +1,5 @@
+import img from "/src/images/nobgcampus.png";
+
 function Navbar() {
   return (
     <div className="flex flex-col items-center gap-[5.437rem] mb-[2.5rem]">
@@ -11,7 +13,7 @@ function Navbar() {
           </button>
         </div>
       </div>
-      <img src="/src/images/nobgcampus.png" alt="" />
+      <img src={img} alt="" />
     </div>
   );
 }
