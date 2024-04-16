@@ -1,7 +1,7 @@
 function Card2() {
   return (
     <div className="bg-[#393939] mx-[1rem]  flex items-center pl-[2.054rem] py-[2.688rem] mb-[1rem] rounded-[0.906rem]">
-      <h1 className="text-[1.5rem] text-white w-11/12 font-light">
+      <h1 className="text-[1.5rem] text-white w-11/12 font-thin">
         Eius ut aut aliquid accusamus laboriosam fugit! A. Error corrupti
         placeat distinctio consectetur eveniet commodi cumque ducimus
         repellendus mollitia possimus quas dolor iure quasi illum nulla,

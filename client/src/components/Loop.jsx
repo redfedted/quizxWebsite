@@ -1,14 +1,3 @@
-// function Loop() {
-//   return (
-//     <div className="bg-[#CF0804] h-[8.5rem] mb-[1.472rem] text-white text-[1.468rem] italic">
-//       <div className="flex justify-between">
-//         <span> fewregrg</span>
-//         <span> ewrgrwg</span>
-//         <span>ewfrewgrg </span>
-//       </div>
-//     </div>
-//   );
-// }
 import { useRef } from "react";
 import "../index.css";
 import {
@@ -21,7 +10,8 @@ import {
   useAnimationFrame,
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
-function Loop({ items, baseVelocity }) {
+
+function LoopItems({ items, baseVelocity }) {
   const arr = items;
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
@@ -67,7 +57,7 @@ function Loop({ items, baseVelocity }) {
    * dynamically generated number of children.
    */
   return (
-    <div >
+    <div>
       <div className="parallax">
         <motion.div className="scroller" style={{ x }}>
           {arr.map((e) => {
@@ -76,6 +66,62 @@ function Loop({ items, baseVelocity }) {
         </motion.div>
       </div>
     </div>
+  );
+}
+
+function Loop() {
+  const items1 = [
+    "Knowledge-Centric",
+    "Connect the Dots",
+    "Cross-Field Collaboration",
+    "LLM-Powered Tools",
+    "Modern-insights to Academics / Cutting-Edge to Academics",
+    "Contextual Learning",
+    "Knowledge-Centric",
+    "Connect the Dots",
+    "Cross-Field Collaboration",
+    "LLM-Powered Tools",
+    "Modern-insights to Academics / Cutting-Edge to Academics",
+    "Contextual Learning",
+  ];
+  const items2 = [
+    "Simple yet Interesting",
+    "Learning Through Play",
+    "Inspiring Ideas",
+    "Curious by Design",
+    "Selectively Gamified",
+    "Collective Intelligence",
+    "Beyond Syllabus",
+    "Simple yet Interesting",
+    "Learning Through Play",
+    "Inspiring Ideas",
+    "Curious by Design",
+    "Selectively Gamified",
+    "Collective Intelligence",
+    "Beyond Syllabus",
+  ];
+  const items3 = [
+    "Social Brainstorming",
+    "Beyond Syllabus",
+    "Creative Classrooms",
+    "Imagining Possibilities",
+    "Fun Meets Functionality",
+    "Student-Machine Interface",
+    "Lecture Synthesizer",
+    "Social Brainstorming",
+    "Beyond Syllabus",
+    "Creative Classrooms",
+    "Imagining Possibilities",
+    "Fun Meets Functionality",
+    "Student-Machine Interface",
+    "Lecture Synthesizer",
+  ];
+  return (
+    <section className="mb-[1.472rem] flex  flex-col gap-[0.5rem] bg-[#cf0804]  py-[1.125rem]">
+      <LoopItems baseVelocity={1} items={items1}></LoopItems>
+      <LoopItems baseVelocity={-1} items={items2}></LoopItems>
+      <LoopItems baseVelocity={1} items={items3}></LoopItems>
+    </section>
   );
 }
 

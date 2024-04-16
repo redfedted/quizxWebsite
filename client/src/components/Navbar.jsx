@@ -2,13 +2,13 @@ import img from "/src/images/nobgcampus.png";
 
 function Navbar() {
   return (
-    <div className="flex flex-col items-center gap-[5.437rem] mb-[2.5rem]">
-      <div className="flex justify-center mt-[2rem] ">
-        <div className="border border-1 border-[#CF0804] border-solid  text-[1rem] p-[0.347rem] rounded-full font-normal">
-          <button className="py-[0.678rem] px-[2.364rem] bg-[#CF0804] rounded-full text-white ">
+    <div className="mb-[2.5rem] flex flex-col items-center gap-[5.437rem]">
+      <div className="mt-[2rem] flex justify-center ">
+        <div className="border-1 rounded-full border border-solid  border-[#CF0804] p-[0.347rem] text-[1rem] font-normal">
+          <button className="rounded-full bg-[#CF0804] px-[2.364rem] py-[0.678rem] text-white ">
             Home
           </button>
-          <button className="py-[0.678rem] px-[2.364rem]  rounded-full">
+          <button className="rounded-full px-[2.364rem]  py-[0.678rem]">
             Join Waitlist
           </button>
         </div>

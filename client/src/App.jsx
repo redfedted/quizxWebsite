@@ -10,66 +10,16 @@ import Navbar from "./components/Navbar";
 import "./index.css";
 
 function App() {
-  const items1 = [
-    "Knowledge-Centric",
-    "Connect the Dots",
-    "Cross-Field Collaboration",
-    "LLM-Powered Tools",
-    "Modern-insights to Academics / Cutting-Edge to Academics",
-    "Contextual Learning",
-    "Knowledge-Centric",
-    "Connect the Dots",
-    "Cross-Field Collaboration",
-    "LLM-Powered Tools",
-    "Modern-insights to Academics / Cutting-Edge to Academics",
-    "Contextual Learning",
-  ];
-  const items2 = [
-    "Simple yet Interesting",
-    "Learning Through Play",
-    "Inspiring Ideas",
-    "Curious by Design",
-    "Selectively Gamified",
-    "Collective Intelligence",
-    "Beyond Syllabus",
-    "Simple yet Interesting",
-    "Learning Through Play",
-    "Inspiring Ideas",
-    "Curious by Design",
-    "Selectively Gamified",
-    "Collective Intelligence",
-    "Beyond Syllabus",
-  ];
-  const items3 = [
-    "Social Brainstorming",
-    "Beyond Syllabus",
-    "Creative Classrooms",
-    "Imagining Possibilities",
-    "Fun Meets Functionality",
-    "Student-Machine Interface",
-    "Lecture Synthesizer",
-    "Social Brainstorming",
-    "Beyond Syllabus",
-    "Creative Classrooms",
-    "Imagining Possibilities",
-    "Fun Meets Functionality",
-    "Student-Machine Interface",
-    "Lecture Synthesizer",
-  ];
-
   return (
     <div>
       <Navbar />
       <Info />
-      <section className="flex flex-col gap-[0.5rem] bg-[#cf0804] py-[1.125rem] mb-[1.472rem]">
-        <Loop baseVelocity={1} items={items1}></Loop>
-        <Loop baseVelocity={-1} items={items2}></Loop>
-        <Loop baseVelocity={1} items={items3}></Loop>
-      </section>
+      <Loop />
       <Interaction />
-      <Card1 />
-      <Card1 />
-      <Card1 />
+      <Card1 h1={"Group"} h2={"Connect and Collaborate Anytime, Anywhere."} />
+      <Card1 h1={"Switch"} h2={"Flip the Switch to Focus and Ideate"} />
+      <Card1 h1={"Corridor"} h2={"Discover and Connect"} />
+      <Card1 h1={"Trivia"} h2={"Learn, Play, Grow Every Day"} />
       <Card2 />
       <Card1 />
       <Card1 />
