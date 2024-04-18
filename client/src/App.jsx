@@ -10,6 +10,8 @@ import Loop from "./components/Loop";
 import Navbar from "./components/Navbar";
 import StartPage from "./components/StartPage";
 import "./index.css";
+import AboutQuizx from "./components/AboutQuizx";
+import img1 from "/src/images/illus.png";
 
 function App() {
   const [startPage, setStartPage] = useState(true);
@@ -24,8 +26,21 @@ function App() {
           <Navbar />
           <Info />
           <Loop />
+          <AboutQuizx
+            heading={"Elevating Your Education Experience"}
+            description={
+              " Enhances teaching, deepens learning, fosters collaboration and personalized student engagement with knowledge through our simple innovation"
+            }
+            imgUrl={img1}
+          />          <AboutQuizx
+          heading={"Advancing a Culture of Academic Innovation"}
+          description={
+            "Sparks curiosity, strengthens thinking, ignites imagination, and promotes action-oriented learning with our educational ecosystem."
+          }
+          imgUrl={img1}
+        />
           <Interaction />
-          <Card1
+          {/* <Card1
             h1={"Group"}
             h2={"Connect and Collaborate Anytime, Anywhere."}
           />
@@ -37,7 +52,7 @@ function App() {
           <Card1 />
           <Card1 />
           <Card2 />
-          <Card1 />
+          <Card1 /> */}
           <Contact />
           <Footer />
         </div>

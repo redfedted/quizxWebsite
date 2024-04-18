@@ -117,7 +117,7 @@ function Loop() {
     "Lecture Synthesizer",
   ];
   return (
-    <section className="mb-[1.472rem] flex  flex-col gap-[0.5rem] bg-[#cf0804]  py-[1.125rem]">
+    <section className=" flex  flex-col gap-[0.5rem] bg-[#CF0804]  py-[1.125rem]">
       <LoopItems baseVelocity={1} items={items1}></LoopItems>
       <LoopItems baseVelocity={-1} items={items2}></LoopItems>
       <LoopItems baseVelocity={1} items={items3}></LoopItems>
