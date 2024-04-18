@@ -17,7 +17,7 @@ function StartPage({ setStartPage }) {
         <h2 className="text-[#D2322F]">Campus Ecosystem</h2>
       </div>
 
-      <h3 className="mb-[1.5rem] w-10/12 text-[1.5rem] leading-[28.77pxrem] opacity-75">
+      <h3 className="mb-[1.5rem] w-9/12 text-[1.5rem] leading-[28.77pxrem] opacity-75">
         Reimagine the Educational Experience for your Institution
       </h3>
       <button
