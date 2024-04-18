@@ -10,7 +10,7 @@ function AboutQuizx({ heading, description, imgUrl }) {
         <h1 className="w-9/12 text-[1.5rem] font-black">{heading}</h1>
         <h2 className="w-9/12 text-[1rem]">{description}</h2>
         {viewMore ? (
-          <div className="pl-[1.134rem] text-[1rem] pb-[0.5rem]">
+          <div className="pb-[0.5rem] pl-[1.134rem] text-[1rem] mb-[2.188rem]">
             <ol className="list-disc">
               <li>
                 Interactive and Gamified Learning for engaging students with
@@ -36,7 +36,7 @@ function AboutQuizx({ heading, description, imgUrl }) {
           </div>
         ) : null}
         {viewMore ? null : (
-          <div className="flex  gap-[0.25rem] rounded-[0.5rem]  bg-[#ECECEC] px-[1.5rem] py-[0.5rem]">
+          <div className="flex  gap-[0.25rem] rounded-[0.5rem]  bg-[#ECECEC] px-[1.5rem] py-[0.5rem] mb-[2.188rem]">
             <button
               className="text-[0.75rem]"
               onClick={() => {
