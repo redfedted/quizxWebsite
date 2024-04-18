@@ -10,7 +10,7 @@ function AboutQuizx({ heading, description, imgUrl }) {
         <h1 className="w-9/12 text-[1.5rem] font-black">{heading}</h1>
         <h2 className="w-9/12 text-[1rem]">{description}</h2>
         {viewMore ? (
-          <div className="pl-[1.134rem] text-[1rem]">
+          <div className="pl-[1.134rem] text-[1rem] pb-[0.5rem]">
             <ol className="list-disc">
               <li>
                 Interactive and Gamified Learning for engaging students with
