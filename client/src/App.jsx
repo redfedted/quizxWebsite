@@ -24,6 +24,7 @@ function App() {
         </div>
       ) : (
         <div>
+          {window.scrollTo(0, 0)}
           <Navbar />
           <Info />
           <Loop />
