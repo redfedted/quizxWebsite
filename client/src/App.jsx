@@ -18,7 +18,7 @@ function App() {
   const start = false;
   return (
     <div>
-      {start ? (
+      {startPage ? (
         <div>
           <StartPage setStartPage={setStartPage} />
         </div>
