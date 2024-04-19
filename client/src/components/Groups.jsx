@@ -21,7 +21,7 @@ function Groups({ title, description }) {
         </h2>{" "}
         <div {...getCollapseProps()}>
           <h1
-            className={` pb-[1rem] text-[1.049rem] ${isExpanded && "text-white"}`}
+            className={` pb-[1rem] text-[0.875rem] ${isExpanded && "text-white"}`}
           >
             Groups bring the classroom to you, wherever you are. It’s a
             dedicated space for teachers and students to communicate, share
