@@ -34,13 +34,25 @@ function AboutQuizx({ heading, description, imgUrl }) {
           </li>
         </ol>{" "}
         <div
-          className="mb-[2.188rem]   flex gap-[0.25rem] items-center rounded-[0.5rem] bg-[#ECECEC] px-[1.5rem] py-[0.5rem]"
+          className="mb-[2.188rem]   flex items-center gap-[0.25rem] rounded-[0.5rem] bg-[#ECECEC] px-[1.5rem] py-[0.5rem]"
           {...getToggleProps()}
         >
           <button className="text-[0.75rem] ">
             {isExpanded ? "Collapse" : "View more"}
           </button>
-          {isExpanded ? <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"></path></svg> : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>}
+          {isExpanded ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"></path>
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+          )}
         </div>
       </div>
       <div className="flex justify-center">
