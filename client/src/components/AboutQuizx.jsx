@@ -8,12 +8,12 @@ function AboutQuizx({ heading, description, imgUrl }) {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse(config);
   return (
     <div className="my-[2rem]">
-      <div className="mx-[1.134rem] flex flex-col items-start gap-[1rem]">
-        <h1 className="w-9/12 text-[1.5rem] font-black">{heading}</h1>
-        <h2 className="w-9/12 text-[1rem]">{description}</h2>
+      <div className="mx-[1.134rem] flex flex-col items-start ">
+        <h1 className="w-9/12 pb-[1rem] text-[1.5rem] font-black">{heading}</h1>
+        <h2 className="w-9/12 pb-[1rem]  text-[1rem]">{description}</h2>
 
         <ol
-          className="list-disc pl-[1.134rem] text-[1rem]"
+          className="list-disc pl-[1.134rem] "
           {...getCollapseProps()}
         >
           <li>
@@ -32,7 +32,7 @@ function AboutQuizx({ heading, description, imgUrl }) {
             Collaborative Learning Environment for fostering idea exchange and
             peer networking for collective intelligence.
           </li>
-          <li>
+          <li className="pb-[1rem]">
             Personalized Academic Tools for organizing and deliver targeted
             knowledge efficiently.
           </li>
