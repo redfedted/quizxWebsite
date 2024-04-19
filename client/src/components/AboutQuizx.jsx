@@ -34,7 +34,7 @@ function AboutQuizx({ heading, description, imgUrl }) {
           </li>
         </ol>{" "}
         <div
-          className="mb-[2.188rem] justify-between w-[39%] flex items-center rounded-[0.5rem] bg-[#ECECEC] px-[1.5rem] py-[0.5rem]"
+          className="mb-[2.188rem] justify-between w-[128px] flex items-center rounded-[0.5rem] bg-[#ECECEC] px-[1.5rem] py-[0.5rem]"
           {...getToggleProps()}
         >
           <button className="text-[0.75rem] ">
