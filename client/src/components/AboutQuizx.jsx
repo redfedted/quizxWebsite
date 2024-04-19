@@ -38,7 +38,7 @@ function AboutQuizx({ heading, description, imgUrl }) {
           {...getToggleProps()}
         >
           <button className="text-[0.75rem] ">
-            {isExpanded ? "Collapse" : "View more"}
+            {isExpanded ? "View less" : "View more"}
           </button>
           {isExpanded ? (
             <svg
