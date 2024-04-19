@@ -3,7 +3,7 @@ import svg from "/src/svgs/arrow.svg";
 import { useCollapse } from "react-collapsed";
 function AboutQuizx({ heading, description, imgUrl }) {
   const config = {
-    duration: 2000,
+    duration: 750,
   };
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse(config);
   return (
