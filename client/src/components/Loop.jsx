@@ -75,13 +75,13 @@ function Loop() {
     "Connect the Dots",
     "Cross-Field Collaboration",
     "LLM-Powered Tools",
-    "Modern-insights to Academics / Cutting-Edge to Academics",
+    "Modern-insights to Academics, Cutting-Edge to Academics",
     "Contextual Learning",
     "Knowledge-Centric",
     "Connect the Dots",
     "Cross-Field Collaboration",
     "LLM-Powered Tools",
-    "Modern-insights to Academics / Cutting-Edge to Academics",
+    "Modern-insights to Academics, Cutting-Edge to Academics",
     "Contextual Learning",
   ];
   const items2 = [
