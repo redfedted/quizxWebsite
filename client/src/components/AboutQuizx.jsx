@@ -75,10 +75,10 @@ function AboutQuizx({ heading, description, imgUrl }) {
           </div>
         )} */}
         <div
-          className="mb-[2.188rem] flex w-[160px] items-center justify-between rounded-[0.5rem] bg-[#ECECEC] px-[1.5rem] py-[0.5rem]"
+          className="mb-[2.188rem] flex w-[160px] items-center justify-between rounded-[0.5rem] bg-[#ECECEC] px-[1.5rem] py-[0.5rem] "
           {...getToggleProps()}
         >
-          <button className="text-[0.75rem] ">
+          <button className="text-[0.75rem] transform-gpu  duration-500">
             {isExpanded ? "Less Information" : "More Information"}
           </button>
 
