@@ -7,7 +7,8 @@ function Groups({ title, description }) {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
   return (
-    <div {...getToggleProps()}
+    <div
+      {...getToggleProps()}
       className={`mx-[1rem] mb-[1rem] flex items-start ${isExpanded && "bg-[#393939]"}  justify-between rounded-[0.5rem] border-[0.063rem] border-solid border-[#787878] px-[1.509rem] pt-[1.05rem]`}
     >
       <div>
@@ -32,8 +33,21 @@ function Groups({ title, description }) {
           </h1>
         </div>
       </div>
-      <div  className="pt-2 ">
-        {isExpanded ? (
+      <div
+        className={`transform-gpu  pt-2 duration-500 ${isExpanded ? "-rotate-180  " : "rotate-0 "}`}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="22"
+          fill={isExpanded ? "#ffffff" : "#383838"}
+          viewBox="0 0 256 256"
+        >
+          <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+        </svg>
+        
+
+        {/* {isExpanded ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="22"
@@ -53,7 +67,7 @@ function Groups({ title, description }) {
           >
             <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
           </svg>
-        )}
+        )} */}
       </div>
     </div>
   );
