@@ -21,12 +21,12 @@ function StartPage({ setStartPage }) {
         Reimagine the Educational Experience for your Institution
       </h3>
       <button
-        className="border-1  mb-[2.563rem]  rounded-full border-2 border-black px-[2.5rem] py-[1rem] text-[1rem]"
+        className="border-1  mb-[2.563rem]  rounded-full border-2 border-black px-[2rem] py-[0.5rem] text-[1rem]"
         onClick={() => {
           setStartPage(false);
         }}
       >
-        Explore more
+        Explore
       </button>
     </div>
   );

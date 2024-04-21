@@ -12,10 +12,11 @@ import StartPage from "./components/StartPage";
 import "./index.css";
 import AboutQuizx from "./components/AboutQuizx";
 import img1 from "/src/images/illus.png";
+import { AnimatePresence, motion } from "framer-motion";
 
 function App() {
   const [startPage, setStartPage] = useState(true);
-  const start = false;
+
   return (
     <div>
       {startPage ? (
@@ -23,27 +24,32 @@ function App() {
           <StartPage setStartPage={setStartPage} />
         </div>
       ) : (
-        <div>
-          {window.scrollTo(0, 0)}
-          <Navbar />
-          <Info />
-          <Loop />
-          <AboutQuizx
-            heading={"Elevating Your Education Experience"}
-            description={
-              " Enhances teaching, deepens learning, fosters collaboration and personalized student engagement with knowledge through our simple innovation"
-            }
-            imgUrl={img1}
-          />{" "}
-          <AboutQuizx
-            heading={"Advancing a Culture of Academic Innovation"}
-            description={
-              "Sparks curiosity, strengthens thinking, ignites imagination, and promotes action-oriented learning with our educational ecosystem."
-            }
-            imgUrl={img1}
-          />
-          <Interaction />
-          {/* <Card1
+        <AnimatePresence>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            {window.scrollTo(0, 0)}
+            <Navbar />
+            <Info />
+            <Loop />
+            <AboutQuizx
+              heading={"Elevating Your Education Experience"}
+              description={
+                " Enhances teaching, deepens learning, fosters collaboration and personalized student engagement with knowledge through our simple innovation"
+              }
+              imgUrl={img1}
+            />{" "}
+            <AboutQuizx
+              heading={"Advancing a Culture of Academic Innovation"}
+              description={
+                "Sparks curiosity, strengthens thinking, ignites imagination, and promotes action-oriented learning with our educational ecosystem."
+              }
+              imgUrl={img1}
+            />
+            <Interaction />
+            {/* <Card1
             h1={"Group"}
             h2={"Connect and Collaborate Anytime, Anywhere."}
           />
@@ -56,9 +62,10 @@ function App() {
           <Card1 />
           <Card2 />
           <Card1 /> */}
-          <Contact />
-          <Footer />
-        </div>
+            <Contact />
+            <Footer />
+          </motion.div>
+        </AnimatePresence>
       )}
       `
     </div>

@@ -7,7 +7,7 @@ function Groups({ title, description }) {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
   return (
-    <div
+    <div {...getToggleProps()}
       className={`mx-[1rem] mb-[1rem] flex items-start ${isExpanded && "bg-[#393939]"}  justify-between rounded-[0.5rem] border-[0.063rem] border-solid border-[#787878] px-[1.509rem] pt-[1.05rem]`}
     >
       <div>
@@ -32,7 +32,7 @@ function Groups({ title, description }) {
           </h1>
         </div>
       </div>
-      <div {...getToggleProps()} className="pt-2 ">
+      <div  className="pt-2 ">
         {isExpanded ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
