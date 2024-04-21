@@ -102,14 +102,12 @@ function Loop() {
   ];
   const items3 = [
     "Social Brainstorming",
-    "Beyond Syllabus",
     "Creative Classrooms",
     "Imagining Possibilities",
     "Fun Meets Functionality",
     "Student-Machine Interface",
     "Lecture Synthesizer",
     "Social Brainstorming",
-    "Beyond Syllabus",
     "Creative Classrooms",
     "Imagining Possibilities",
     "Fun Meets Functionality",
