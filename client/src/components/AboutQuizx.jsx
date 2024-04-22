@@ -7,10 +7,14 @@ function AboutQuizx({ heading, description, imgUrl }) {
   };
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse(config);
   return (
-    <div className="my-[2rem]">
-      <div className="mx-[1.134rem] flex flex-col items-start ">
-        <h1 className="w-9/12 pb-[1rem] text-[1.5rem] font-black">{heading}</h1>
-        <h2 className="w-9/12 pb-[1rem]  text-[1rem]">{description}</h2>
+    <div className="mx-[1.134rem] my-[2rem]  flex flex-col lg:mx-[6%] lg:flex-row ">
+      <div className="flex flex-col items-start ">
+        <h1 className="w-9/12 pb-[1rem] text-[1.5rem] font-black lg:max-w-[60%] lg:text-[2.5rem]">
+          {heading}
+        </h1>
+        <h2 className="w-9/12 pb-[1rem]  text-[1rem] lg:text-[1.667rem]">
+          {description}
+        </h2>
         <ol className="list-disc pl-[1.134rem] " {...getCollapseProps()}>
           <li>
             Interactive and Gamified Learning for engaging students with lively,
@@ -94,7 +98,7 @@ function AboutQuizx({ heading, description, imgUrl }) {
           </svg>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="w-full">
         {" "}
         <img src={imgUrl} alt="" />
       </div>

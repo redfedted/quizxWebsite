@@ -59,9 +59,9 @@ function LoopItems({ items, baseVelocity }) {
   return (
     <div>
       <div className="parallax">
-        <motion.div className="scroller" style={{ x }}>
+        <motion.div className="scroller " style={{ x }}>
           {arr.map((e) => {
-            return <span key={e}>{e}</span>;
+            return <span className="lg:text-[4.167rem]" key={e}>{e}</span>;
           })}
         </motion.div>
       </div>

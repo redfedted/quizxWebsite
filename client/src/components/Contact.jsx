@@ -1,13 +1,14 @@
 import svg from "/src/svgs/Handshake.svg";
 function Contact() {
   return (
-    <div className="flex flex-col mt-[2.563rem] gap-[1rem] items-center text-center bg-[#CF0804] py-[1.235rem] px-[2.959rem] mb-[6.672rem]">
-      <div className="flex gap-[0.25rem] bg-white rounded-full text-[0.684rem] px-[1.875rem] py-[0.734rem] border border-solid border-1 border-black">
+    <div className="mb-[6.672rem] mt-[2.563rem] flex flex-col items-center gap-[1rem] bg-[#CF0804] px-[2.959rem] py-[1.235rem] text-center lg:flex-row lg:justify-center lg:gap-[5%] lg:px-[1.25rem]">
+      <div className="border-1 flex gap-[0.25rem] rounded-full border border-solid border-black bg-white px-[1.875rem] py-[0.734rem] text-[0.684rem] lg:text-[1rem]">
         <img src={svg} alt="" />
         <button className="">Human assistance</button>
       </div>
-      <h1 className="text-white text-[1.25rem]">
-      Connect with our CEO for personalized guidance on integrating QuizX into your educational ecosystem.
+      <h1 className="text-[1.25rem] lg:text-[1.333rem] lg:max-w-[55%] lg:text-start text-white">
+        Connect with our CEO for personalized guidance on integrating QuizX into
+        your educational ecosystem.
       </h1>
     </div>
   );
