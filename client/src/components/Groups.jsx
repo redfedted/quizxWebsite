@@ -4,7 +4,10 @@ import svg2 from "/src/svgs/up.svg";
 import { useCollapse } from "react-collapsed";
 
 function Groups({ title, description }) {
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+  const config = {
+    duration: 500,
+  };
+  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse(config);
 
   return (
     <div
