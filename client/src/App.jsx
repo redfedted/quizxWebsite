@@ -40,12 +40,22 @@ function App() {
                 " Enhances teaching, deepens learning, fosters collaboration and personalized student engagement with knowledge through our simple innovation"
               }
               imgUrl={img1}
+              order={true}
             />{" "}
             <AboutQuizx
               heading={"Advancing a Culture of Academic Innovation"}
               description={
                 "Sparks curiosity, strengthens thinking, ignites imagination, and promotes action-oriented learning with our educational ecosystem."
               }
+              order={false}
+              imgUrl={img1}
+            />{" "}
+            <AboutQuizx
+              heading={"Future-Proofing You with Changing Technology"}
+              description={
+                "QuizX, your ally in ed-tech progress, smoothly blends the newest tech and ideas into your institution, uniting traditional and digital learning."
+              }
+              order={true}
               imgUrl={img1}
             />
             <Interaction />

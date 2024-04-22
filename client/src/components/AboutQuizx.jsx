@@ -1,18 +1,20 @@
 import { useState } from "react";
 import svg from "/src/svgs/arrow.svg";
 import { useCollapse } from "react-collapsed";
-function AboutQuizx({ heading, description, imgUrl }) {
+function AboutQuizx({ heading, description, imgUrl, order }) {
   const config = {
     duration: 500,
   };
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse(config);
   return (
-    <div className="mx-[1.134rem] my-[2rem]  flex flex-col lg:mx-[6%] lg:flex-row ">
-      <div className="flex flex-col items-start ">
-        <h1 className="w-9/12 pb-[1rem] text-[1.5rem] font-black lg:max-w-[60%] lg:text-[2.5rem]">
+    <div className="mx-[1.134rem] my-[2rem]  flex flex-col lg:mx-[6%] lg:flex-row lg:justify-between">
+      <div
+        className={`flex flex-col  items-start ${order ? null : "lg:order-2"} lg:max-w-[45%]`}
+      >
+        <h1 className="w-9/12 pb-[1rem] text-[1.5rem] font-black lg:max-w-[80%] lg:text-[2.5rem]">
           {heading}
         </h1>
-        <h2 className="w-9/12 pb-[1rem]  text-[1rem] lg:text-[1.667rem]">
+        <h2 className="pb-[1rem]  text-[1rem] lg:text-[1.667rem]">
           {description}
         </h2>
         <ol className="list-disc pl-[1.134rem] " {...getCollapseProps()}>
@@ -98,7 +100,7 @@ function AboutQuizx({ heading, description, imgUrl }) {
           </svg>
         </div>
       </div>
-      <div className="w-full">
+      <div className={` ${order ? null : "lg:order-1"}`}>
         {" "}
         <img src={imgUrl} alt="" />
       </div>
