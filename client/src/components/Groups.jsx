@@ -5,7 +5,7 @@ import { useCollapse } from "react-collapsed";
 
 function Groups({ title, description }) {
   const config = {
-    duration: 500,
+    duration: 1000,
   };
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse(config);
 
