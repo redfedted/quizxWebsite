@@ -5,7 +5,7 @@ function Navbar() {
   const [click, setClick] = useState("Home");
 
   return (
-    <div className="mb-[2.5rem] flex flex-col    gap-[5.437rem]">
+    <div className="mb-[2.5rem] flex flex-col lg:mb-[2.375rem]    gap-[5.437rem]">
       <div className="mt-[2rem] flex  justify-center ">
         <div className="border-1 rounded-full border border-solid  border-[#CF0804] p-[0.347rem] text-[1rem] font-normal">
           <button
