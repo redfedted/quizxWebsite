@@ -1,5 +1,6 @@
 import { useState } from "react";
-import img from "/src/images/nobgcampus.png";
+// import img from "/src/images/nobgcampus.png";
+import img from "/src/svgs/QXlogo.svg";
 
 function Navbar() {
   const [click, setClick] = useState("Home");

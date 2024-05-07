@@ -11,7 +11,9 @@ import Navbar from "./components/Navbar";
 import StartPage from "./components/StartPage";
 import "./index.css";
 import AboutQuizx from "./components/AboutQuizx";
-import img1 from "/src/images/illus.png";
+import img1 from "/src/svgs/about1.svg";
+import img2 from "/src/svgs/about2.svg";
+import img3 from "/src/svgs/about3.svg";
 import { AnimatePresence, motion } from "framer-motion";
 
 function App() {
@@ -48,7 +50,7 @@ function App() {
                 "Sparks curiosity, strengthens thinking, ignites imagination, and promotes action-oriented learning with our educational ecosystem."
               }
               order={false}
-              imgUrl={img1}
+              imgUrl={img2}
             />{" "}
             <AboutQuizx
               heading={"Future-Proofing You with Changing Technology"}
@@ -56,7 +58,7 @@ function App() {
                 "QuizX, your ally in ed-tech progress, smoothly blends the newest tech and ideas into your institution, uniting traditional and digital learning."
               }
               order={true}
-              imgUrl={img1}
+              imgUrl={img3}
             />
             <Interaction />
             {/* <Card1

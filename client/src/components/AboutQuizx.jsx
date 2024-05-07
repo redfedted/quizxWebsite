@@ -7,7 +7,7 @@ function AboutQuizx({ heading, description, imgUrl, order }) {
   };
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse(config);
   return (
-    <div className="mx-[1.134rem] my-[2rem] lg:my-[5%]  flex flex-col lg:mx-[6%] lg:flex-row lg:justify-between">
+    <div className="mx-[1.134rem] my-[2rem] flex  flex-col lg:mx-[6%] lg:my-[5%] lg:flex-row lg:justify-between">
       <div
         className={`flex flex-col  items-start ${order ? null : "lg:order-2"} lg:max-w-[45%]`}
       >
@@ -81,7 +81,7 @@ function AboutQuizx({ heading, description, imgUrl, order }) {
           </div>
         )} */}
         <div
-          className="mb-[2.188rem] flex w-[150px] items-center gap-1 justify-center rounded-[0.5rem] bg-[#ECECEC] px-[1rem] py-[0.5rem]  lg:w-[200px] lg:gap-3"
+          className="mb-[2.188rem] flex w-[150px] items-center justify-center gap-1 rounded-[0.5rem] bg-[#ECECEC] px-[1rem] py-[0.5rem]  lg:w-[200px] lg:gap-3"
           {...getToggleProps()}
         >
           <button className="text-[0.75rem] ">
@@ -100,7 +100,7 @@ function AboutQuizx({ heading, description, imgUrl, order }) {
           </svg>
         </div>
       </div>
-      <div className={` ${order ? null : "lg:order-1"} lg:pt-[4%]`}>
+      <div className={` ${order ? null : "lg:order-1"} lg:w-[30rem] `}>
         {" "}
         <img src={imgUrl} alt="" />
       </div>
