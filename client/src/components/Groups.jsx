@@ -3,14 +3,13 @@ import svg1 from "/src/svgs/down.svg";
 import svg2 from "/src/svgs/up.svg";
 import { useCollapse } from "react-collapsed";
 
-function Groups({ title, description }) {
- 
+function Groups({ title, description, content }) {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
   return (
     <div
       {...getToggleProps()}
-      className={`mx-[1rem] mb-[1rem] flex items-start ${isExpanded && "bg-[#393939]"}  transform-gpu justify-between rounded-[0.5rem] border-[0.063rem] border-solid border-[#787878] px-[1.509rem] pt-[1.05rem]  duration-300 lg:min-w-48 hover:border-black `}
+      className={`mx-[1rem] mb-[1rem] flex items-start ${isExpanded && "bg-[#393939]"}  transform-gpu justify-between rounded-[0.5rem] border-[0.063rem] border-solid border-[#787878] px-[1.509rem] pt-[1.05rem]  duration-300 hover:border-black lg:min-w-48 `}
     >
       <div>
         <h1 className={`text-[1.25rem] ${isExpanded && "text-white"}`}>
@@ -25,12 +24,7 @@ function Groups({ title, description }) {
           <h1
             className={` pb-[1rem] text-[0.875rem] ${isExpanded && "text-white"}`}
           >
-            Groups bring the classroom to you, wherever you are. It’s a
-            dedicated space for teachers and students to communicate, share
-            resources, and support each other’s learning journey. Simple,
-            effective, and always accessible, Groups ensures that education
-            doesn’t end at the classroom door—it’s where the extended learning
-            community thrives.
+            {content}
           </h1>
         </div>
       </div>
