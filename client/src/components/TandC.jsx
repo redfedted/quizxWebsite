@@ -1,11 +1,13 @@
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 function TandC() {
   return (
     <div>
       {window.scrollTo(0, 0)}
-      <div className="mx-auto my-10 flex w-10/12 flex-col gap-3 font-bold">
+      <Navbar home={"Home"} />
+      <div className="flex flex-col w-10/12 gap-3 mx-auto my-10 font-bold">
         <h1 className="text-5xl font-bold">Privacy Policy</h1>
         <h2 className="text-xl lg:text-2xl">
           Last updated 26 October 2023
@@ -50,7 +52,7 @@ function TandC() {
         <h3>
           We use the information we collect in various ways, including to:
         </h3>
-        <ul className="list-disc pl-3 lg:pl-8">
+        <ul className="pl-3 list-disc lg:pl-8">
           <li>Provide, operate, and maintain our website</li>
           <li>Improve, personalize, and expand our website</li>
 

@@ -27,7 +27,7 @@ function Navbar({ home }) {
             onClick={() => {
               setClick("Home");
             }}
-            className={`transform-gpu rounded-full   duration-700 ${click == "Home" ? "bg-[#CF0804] text-white " : "bg-white"} px-[2.364rem] py-[0.678rem] lg:px-[2.25rem] lg:py-[0.593rem]`}
+            className={`transform-gpu rounded-full   duration-700 ${click == "Home" ? "bg-[#CF0804] text-white " : "bg-white"} px-[2.364rem] py-[0.678rem] lg:px-[2.25rem] lg:py-[0.7rem]`}
           >
             Home
           </Link>
@@ -37,7 +37,7 @@ function Navbar({ home }) {
             onClick={() => {
               setClick("Join");
             }}
-            className={`transform-gpu  rounded-full duration-700 ${click == "Join" ? "bg-[#CF0804] text-white  " : "bg-white"} px-[2.364rem]   py-[0.678rem] lg:px-[2.25rem]  lg:py-[0.593rem]`}
+            className={`transform-gpu  rounded-full duration-700 ${click == "Join" ? "bg-[#CF0804] text-white  " : "bg-white"} px-[2.364rem]   py-[0.678rem] lg:px-[2.25rem]  lg:py-[0.7rem]`}
           >
             {" "}
             Join Waitlist

@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import TandC from "./components/TandC";
 import JoinWaitlist from "./components/JoinWaitlist";
+import DeleteSection from "./components/DeleteSection";
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
         <Route path="/home" element={<Layout />}></Route>
         <Route path="/t&c" element={<TandC />}></Route>
         <Route path="/joinwaitlist" element={<JoinWaitlist />}></Route>
+        <Route path="/deleteprofile" element={<DeleteSection />}></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -3,7 +3,7 @@ import svg from "/src/svgs/QuizX.svg";
 
 function Footer() {
   return (
-    <div className="mx-auto flex w-11/12 flex-col gap-10 ">
+    <div className="flex flex-col w-11/12 gap-10 mx-auto ">
       {" "}
       <div className="lg:flex lg:flex-col lg:gap-4 lg:pl-6">
         <div className="flex items-center gap-2 ">
@@ -34,9 +34,12 @@ function Footer() {
           {/* <h1 className="text-[1.25rem] font-light text-[#CF0804] underline lg:text-[1.5rem]">
             Terms and Conditions
           </h1> */}
-          <h1 className="text-[1.25rem] font-light text-[#CF0804] underline  lg:text-[1.5rem]">
+          <Link to={"/deleteprofile"} className="text-[1.25rem] font-light text-[#CF0804] underline  lg:text-[1.5rem]">
             Delete profile
-          </h1>
+          </Link>
+          {/* <h1 className="text-[1.25rem] font-light text-[#CF0804] underline  lg:text-[1.5rem]">
+            Delete profile
+          </h1> */}
         </div>
       </div>
       <div className="lg:-mb-5 ">
