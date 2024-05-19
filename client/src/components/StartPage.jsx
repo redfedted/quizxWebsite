@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function StartPage({ setStartPage }) {
   return (
     <>
-      <div className="mx-[1.3rem] lg:hidden">
+      <div className="mx-[1.3rem] lg:hidden pb-8">
         <h1 className="mb-[5.494rem] mt-[1.791rem] text-center text-[3.401rem]  font-extrabold text-[#CF0804]">
           QuizX
         </h1>

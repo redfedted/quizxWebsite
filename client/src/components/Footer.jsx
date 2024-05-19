@@ -24,7 +24,7 @@ function Footer() {
             />
           </svg>
         </div>
-        <div className="gap-10 lg:flex">
+        <div className="flex flex-col lg:gap-10 lg:flex-row">
           <Link
             className="text-[1.25rem] font-light text-[#CF0804] underline lg:text-[1.5rem]"
             to="/t&c"
@@ -45,7 +45,7 @@ function Footer() {
       <div className="lg:-mb-5 ">
         <h1 className="   w-full  text-[#CF0804]">
           <svg
-            className="w-full lg:pb-4"
+            className="w-full pb-2 lg:pb-8"
             viewBox="0 0 1025 281"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
