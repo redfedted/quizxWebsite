@@ -10,7 +10,7 @@ function Info() {
         <h1 className="pb-[0.5rem] text-[2.25rem] font-bold text-[#171717] lg:text-[2.667rem]">
           Campus Ecosystem
         </h1>
-        <h2 className="px-[2rem] pb-[1.375rem]  text-[1.5rem] text-[#4D4D4D] lg:max-w-[70%] lg:px-0 lg:text-start lg:text-[2.5rem]">
+        <h2 className="px-[2rem]  text-[1.5rem] text-[#4D4D4D] lg:max-w-[70%] lg:px-0 lg:text-start lg:text-[2.5rem]">
           where <b className="text-black">knowledge</b> intersects with{" "}
           <b className="text-black">modern</b>{" "}
           <b className="text-black">technology</b> and{" "}
