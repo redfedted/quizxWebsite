@@ -1,6 +1,19 @@
 @font-face {
   font-family: futuram;
-  src: url("/src/fonts/futura.woff");
+  /* src: url("/src/fonts/futura.woff"); */
+  src: url("/src/fonts/tt0142m.ttf");
+  /* src: url("https://pub-fda2822a46e14c078dd237fc34f45104.r2.dev/futuraMediumBT.woff"); */
+}
+@font-face {
+  font-family: tickertape;
+  /* src: url("/src/fonts/futura.woff"); */
+  src: url("/src/fonts/tt0205m.ttf");
+  /* src: url("https://pub-fda2822a46e14c078dd237fc34f45104.r2.dev/futuraMediumBT.woff"); */
+}
+@font-face {
+  font-family: logoFont;
+  /* src: url("/src/fonts/futura.woff"); */
+  src: url("/src/fonts/tt0144m.ttf");
   /* src: url("https://pub-fda2822a46e14c078dd237fc34f45104.r2.dev/futuraMediumBT.woff"); */
 }
 
