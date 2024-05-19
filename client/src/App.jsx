@@ -3,6 +3,7 @@ import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import TandC from "./components/TandC";
+import JoinWaitlist from "./components/JoinWaitlist";
 
 function App() {
   return (
@@ -73,6 +74,7 @@ function App() {
         <Route path="/" element={<StartPage />}></Route>
         <Route path="/home" element={<Layout />}></Route>
         <Route path="/t&c" element={<TandC />}></Route>
+        <Route path="/joinwaitlist" element={<JoinWaitlist />}></Route>
       </Routes>
     </BrowserRouter>
   );

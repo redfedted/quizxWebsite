@@ -20,7 +20,7 @@ function Layout() {
         exit={{ opacity: 0 }}
       >
         {window.scrollTo(0, 0)}
-        <Navbar />
+        <Navbar home={"Home"} />
         <Info />
         <Loop />
         <AboutQuizx
