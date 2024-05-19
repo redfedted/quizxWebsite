@@ -50,7 +50,7 @@ function StartPage({ setStartPage }) {
       </div>
       <div className="hidden lg:flex">
         <div className="mx-[5rem] flex flex-col ">
-          <h1 className="mb-[5.494rem] mt-[1.791rem] text-center text-[3.401rem]  font-extrabold text-[#CF0804]">
+          <h1 className="mb-[3rem] mt-[1.791rem] text-center text-[3.401rem]  font-extrabold text-[#CF0804]">
             QuizX
           </h1>
           <div className="items-end lg:flex">
