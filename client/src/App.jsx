@@ -15,6 +15,7 @@ import img1 from "/src/svgs/about1.svg";
 import img2 from "/src/svgs/about2.svg";
 import img3 from "/src/svgs/about3.svg";
 import { AnimatePresence, motion } from "framer-motion";
+import TandC from "./components/TandC";
 
 function App() {
   const [startPage, setStartPage] = useState(true);
@@ -23,7 +24,8 @@ function App() {
     <div>
       {startPage ? (
         <div>
-          <StartPage setStartPage={setStartPage} />
+          {/* <StartPage setStartPage={setStartPage} /> */}
+          <TandC />
         </div>
       ) : (
         <AnimatePresence>

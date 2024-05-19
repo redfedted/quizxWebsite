@@ -9,7 +9,7 @@ function Groups({ title, description, content }) {
   return (
     <div
       {...getToggleProps()}
-      className={`mx-[1rem] mb-[1rem] flex items-start ${isExpanded && "bg-[#393939]"}  transform-gpu justify-between rounded-[0.5rem] border-[0.063rem] border-solid border-[#787878] px-[1.509rem] pt-[1.05rem]  duration-300 hover:border-black lg:min-w-48 `}
+      className={`mx-[1rem] mb-[1rem] flex items-start ${isExpanded && "bg-[#393939] hover:border-slate-950"}  transform-gpu justify-between rounded-[0.5rem] border-[0.063rem] border-solid border-[#787878] px-[1.509rem] pt-[1.05rem]  duration-300 hover:border-[#cf0803]  lg:min-w-48 `}
     >
       <div>
         <h1 className={`text-[1.25rem] ${isExpanded && "text-white"}`}>

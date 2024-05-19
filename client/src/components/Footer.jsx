@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="flex flex-col w-11/12 gap-10 mx-auto ">
       {" "}
-      <div className="lg:flex lg:flex-col lg:gap-4">
+      <div className="lg:flex lg:flex-col lg:gap-4 lg:pl-6">
         <div className="flex items-center gap-2 ">
           {" "}
           <h1 className="text-[1.25rem] font-light text-[#CF0804]  lg:text-[1.406rem]">

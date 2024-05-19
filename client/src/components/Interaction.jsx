@@ -49,6 +49,13 @@ function Interaction() {
               "This feature offers a library of engaging podcasts that explore educational topics through in-depth conversations. Podcast hosts interact with guests from diverse fields who have applied their knowledge in unique and interesting ways throughout their careers.Students can tune in to hear firsthand accounts and insights from experienced professionals across endless domains. Additionally, teachers can record their lectures in a podcast format, facilitating an interactive audio experience where curious students can ask questions. The Educational Podcasts provide an immersive long-form audio medium for students to expand their understanding while hearing real-world perspectives and stories that bring concepts to life."
             }
           />{" "}
+          <Groups
+            title={"Knowledge Spectrum "}
+            description={"Next-gen Library for Knowledge"}
+            content={
+              "This system uses algorithms to analyze each student's interests and goals, delivering a tailored selection of resources from our knowledge library. It surfaces the most relevant content at the ideal time for efficient, personalized learning."
+            }
+          />{" "}
         </div>
         <div>
           <Groups
@@ -85,13 +92,7 @@ function Interaction() {
             content={
               "Admins use this dashboard to create and edit their college profile, add students and faculty, and view analytics on institutional data and engagement."
             }
-          />{" "} <Groups
-          title={"Knowledge Spectrum "}
-          description={"Next-gen Library for Knowledge"}
-          content={
-            "This system uses algorithms to analyze each student's interests and goals, delivering a tailored selection of resources from our knowledge library. It surfaces the most relevant content at the ideal time for efficient, personalized learning."
-          }
-        />{" "}
+          />{" "}
         </div>
         <div>
           <Groups
