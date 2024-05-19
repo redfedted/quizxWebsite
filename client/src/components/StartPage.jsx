@@ -1,5 +1,6 @@
 import img2 from "/src/images/startpage2.png";
 import img1 from "/src/images/startpage1.png";
+import { Link } from "react-router-dom";
 
 function StartPage({ setStartPage }) {
   return (
@@ -27,14 +28,23 @@ function StartPage({ setStartPage }) {
             <h3 className="mb-[1.5rem] w-10/12 text-[1.5rem] leading-[28.77pxrem] opacity-75">
               Reimagine the Educational Experience for your Institution
             </h3>
-            <button
+            <Link
+              className="border-1  mb-[2.563rem]  rounded-full border-2 border-black px-[2rem] py-[0.5rem] text-[1rem]"
+              onClick={() => {
+                setStartPage(false);
+              }}
+              to="/home"
+            >
+              Explore
+            </Link>
+            {/* <button
               className="border-1  mb-[2.563rem]  rounded-full border-2 border-black px-[2rem] py-[0.5rem] text-[1rem]"
               onClick={() => {
                 setStartPage(false);
               }}
             >
               Explore
-            </button>{" "}
+            </button>{" "} */}
           </div>
         </div>
       </div>
@@ -58,14 +68,23 @@ function StartPage({ setStartPage }) {
               <h3 className="mb-[1.5rem] w-10/12 text-[1.5rem] leading-[28.77pxrem] opacity-75">
                 Reimagine the Educational Experience for your Institution
               </h3>
-              <button
+              <Link
+                className="border-1   rounded-full border-2 border-black px-[2rem] py-[0.5rem] text-[1rem]"
+                onClick={() => {
+                  setStartPage(false);
+                }}
+                to="/home"
+              >
+                Explore
+              </Link>
+              {/* <button
                 className="border-1   rounded-full border-2 border-black px-[2rem] py-[0.5rem] text-[1rem]"
                 onClick={() => {
                   setStartPage(false);
                 }}
               >
                 Explore
-              </button>{" "}
+              </button>{" "} */}
             </div>
           </div>
         </div>
