@@ -22,17 +22,17 @@ function JoinWaitlist() {
             action="#"
           >
             <input
-              className="rounded-xl  bg-slate-100 py-[0.85rem] pl-[1.31rem] lg:h-[5.655rem] lg:rounded-[1.556rem] lg:pl-[2.75rem] lg:text-[2rem]"
+              className="rounded-xl text-[#4d4d4d]  bg-slate-100 py-[0.85rem] pl-[1.31rem] lg:h-[5.655rem] lg:rounded-[1.556rem] lg:pl-[2.75rem] lg:text-[2rem]"
               type="text"
               placeholder="Name"
             />
             <input
-              className="rounded-xl bg-slate-100  py-[0.85rem] pl-[1.31rem] lg:h-[5.655rem] lg:rounded-[1.556rem] lg:pl-[2.75rem] lg:text-[2rem]"
+              className="rounded-xl text-[#4d4d4d] bg-slate-100  py-[0.85rem] pl-[1.31rem] lg:h-[5.655rem] lg:rounded-[1.556rem] lg:pl-[2.75rem] lg:text-[2rem]"
               type="text"
               placeholder="Email"
             />
             <input
-              className="flexs flex rounded-xl  bg-slate-100  pb-[16.51rem] pl-[1.31rem] pt-[0.85rem] lg:h-[22.809rem] lg:rounded-[1.556rem] lg:pl-[2.75rem]  lg:text-[2rem]"
+              className="flexs flex text-[#4d4d4d] rounded-xl  bg-slate-100  pb-[16.51rem] pl-[1.31rem] pt-[0.85rem] lg:h-[22.809rem] lg:rounded-[1.556rem] lg:pl-[2.75rem]  lg:text-[2rem]"
               type="text"
               placeholder="Enter the message"
             />
