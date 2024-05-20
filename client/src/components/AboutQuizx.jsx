@@ -1,7 +1,7 @@
 import { useState } from "react";
 import svg from "/src/svgs/arrow.svg";
 import { useCollapse } from "react-collapsed";
-function AboutQuizx({ heading, description, imgUrl, order }) {
+function AboutQuizx({ heading, description, imgUrl, order, list = [] }) {
   const config = {
     duration: 500,
   };
@@ -18,26 +18,20 @@ function AboutQuizx({ heading, description, imgUrl, order }) {
           {description}
         </h2>
         <ol className="list-disc pl-[1.134rem] " {...getCollapseProps()}>
-          <li>
-            Interactive and Gamified Learning for engaging students with lively,
-            memorable education tools.
-          </li>
-          <li>
-            AI-Powered Teaching Support for streamlining lecture prep and
-            enhance classroom interaction.
-          </li>
-          <li>
-            Curated Educational Content for connecting learners with the latest
-            field-specific breakthroughs.
-          </li>
-          <li>
-            Collaborative Learning Environment for fostering idea exchange and
-            peer networking for collective intelligence.
-          </li>
-          <li className="pb-[1rem]">
+          {list.map((item, index) => {
+            if (list.length == index + 1)
+              return (
+                <li className="pb-[1rem]" key={index}>
+                  {item}
+                </li>
+              );
+            else return <li key={index}>{item}</li>;
+          })}
+
+          {/* <li className="pb-[1rem]">
             Personalized Academic Tools for organizing and deliver targeted
             knowledge efficiently.
-          </li>
+          </li> */}
         </ol>{" "}
         {/* {isExpanded ? null : (
           <div
