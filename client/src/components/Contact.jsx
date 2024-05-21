@@ -96,7 +96,7 @@ function Contact() {
             <h1>+91 79755 42541</h1>
           </a>
           <a
-            href="mailto:test@test.com"
+            href="mailto:clintonbaptist@thequizx.com"
             className="flex items-center justify-center w-11/12 gap-2 py-3 text-center text-white bg-black rounded-md"
           >
             <svg
