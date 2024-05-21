@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import svg from "/src/svgs/Handshake.svg";
 import img from "/src/images/ceopic.jpg";
+import LazyLoad from "react-lazy-load";
 function Contact() {
   const cardRef = useRef(null);
   const [visible, SetVisible] = useState(false);
@@ -77,7 +78,10 @@ function Contact() {
               />
             </svg>
           </button>
-          <img className="pb-2 rounded-full" src={img} alt="" />
+          <LazyLoad className="rounded-full pb-2" width={200}>
+            <img src={img} />
+          </LazyLoad>
+          {/* <img className="pb-2 rounded-full" src={img} alt="" /> */}
           <h1 className="text-center text-[1.7rem]">CLINTON BAPTIST</h1>
           <a
             href="tel:+9179755 42541"
@@ -100,7 +104,7 @@ function Contact() {
           </a>
           <a
             href="mailto:clintonbaptist@thequizx.com"
-            className="flex items-center justify-center w-11/12 gap-2 py-3 text-center text-white bg-black rounded-md"
+            className="flex w-11/12 items-center justify-center gap-2 rounded-md bg-black py-3 text-center text-white"
           >
             <svg
               width="18"
