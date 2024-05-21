@@ -77,9 +77,9 @@ function Contact() {
               />
             </svg>
           </button>
-          <img className="rounded-full pb-2" src={img} alt="" />
+          <img className="pb-2 rounded-full" src={img} alt="" />
           <h1 className="text-center text-[1.7rem]">CLINTON BAPTIST</h1>
-          <div className="flex items-center gap-2 pb-10">
+          <a href="tel:+9179755 42541" className="flex items-center gap-2 pb-10">
             <svg
               width="14"
               height="18"
@@ -94,10 +94,10 @@ function Contact() {
             </svg>
 
             <h1>+91 79755 42541</h1>
-          </div>
+          </a>
           <a
             href="mailto:test@test.com"
-            className="flex w-11/12 items-center justify-center gap-2 rounded-md bg-black py-3 text-center text-white"
+            className="flex items-center justify-center w-11/12 gap-2 py-3 text-center text-white bg-black rounded-md"
           >
             <svg
               width="18"
