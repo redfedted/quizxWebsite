@@ -78,10 +78,10 @@ function Contact() {
               />
             </svg>
           </button>
-          <LazyLoad className="rounded-full pb-2" width={200}>
+          {/* <LazyLoad className="pb-2 rounded-full" width={200}>
             <img src={img} />
-          </LazyLoad>
-          {/* <img className="pb-2 rounded-full" src={img} alt="" /> */}
+          </LazyLoad> */}
+          <img className="rounded-full pb-2" src={img} alt="" />
           <h1 className="text-center text-[1.7rem]">CLINTON BAPTIST</h1>
           <a
             href="tel:+9179755 42541"
