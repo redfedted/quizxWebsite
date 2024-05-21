@@ -54,7 +54,7 @@ function Contact() {
       </div>{" "}
       {visible && (
         <div
-          className="boder-solid fixed left-1/2 top-1/2 flex w-80 -translate-x-1/2 -translate-y-1/2 transform flex-col items-center rounded-xl border-2 border-[#CF0804] bg-white py-4"
+          className="boder-solid duration-3000 fixed left-1/2 top-1/2 flex w-80 -translate-x-1/2 -translate-y-1/2 transform flex-col items-center rounded-xl border-2 border-[#CF0804] bg-white py-4 "
           ref={cardRef}
         >
           <h1 className="pb-5 text-center text-2xl text-[#CF0804] ">Contact</h1>{" "}
@@ -79,7 +79,10 @@ function Contact() {
           </button>
           <img className="pb-2 rounded-full" src={img} alt="" />
           <h1 className="text-center text-[1.7rem]">CLINTON BAPTIST</h1>
-          <a href="tel:+9179755 42541" className="flex items-center gap-2 pb-10">
+          <a
+            href="tel:+9179755 42541"
+            className="flex items-center gap-2 pb-10"
+          >
             <svg
               width="14"
               height="18"
