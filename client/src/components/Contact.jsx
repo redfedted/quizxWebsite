@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import svg from "/src/svgs/Handshake.svg";
+import img from "/src/images/ceopic.jpg";
 function Contact() {
   const cardRef = useRef(null);
   const [visible, SetVisible] = useState(false);
@@ -76,11 +77,7 @@ function Contact() {
               />
             </svg>
           </button>
-          <img
-            className="pb-2 rounded-full"
-            src="/src/images/ceopic.jpg"
-            alt=""
-          />
+          <img className="rounded-full pb-2" src={img} alt="" />
           <h1 className="text-center text-[1.7rem]">CLINTON BAPTIST</h1>
           <div className="flex items-center gap-2 pb-10">
             <svg
@@ -100,7 +97,7 @@ function Contact() {
           </div>
           <a
             href="mailto:test@test.com"
-            className="flex items-center justify-center w-11/12 gap-2 py-3 text-center text-white bg-black rounded-md"
+            className="flex w-11/12 items-center justify-center gap-2 rounded-md bg-black py-3 text-center text-white"
           >
             <svg
               width="18"
