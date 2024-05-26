@@ -3,20 +3,18 @@ import { useEffect, useState } from "react";
 import img from "/src/svgs/QXlogo.svg";
 import { Link, Outlet } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 
 const tabs = [
   { name: "Home", color: "#CF0804" },
   { name: "Join Waitlist", color: "#CF0804" },
 ];
 
-const duration = 0.5;
+const duration = 0.1;
 
 function Navbar({ home }) {
   const [selected, setSelected] = useState(0);
   const [click, setClick] = useState("Home");
   const [formerColor, setFormerColor] = useState(tabs[0].color);
-  const navigate = useNavigate();
 
   useEffect(() => {
     setClick(home);
