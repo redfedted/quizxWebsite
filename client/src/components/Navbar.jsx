@@ -9,7 +9,7 @@ const tabs = [
   { name: "Join Waitlist", color: "#CF0804" },
 ];
 
-const duration = 0.1;
+const duration = 0.3;
 
 function Navbar({ home }) {
   const [selected, setSelected] = useState(0);
