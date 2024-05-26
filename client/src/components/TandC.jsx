@@ -6,7 +6,6 @@ function TandC() {
   return (
     <div>
       {window.scrollTo(0, 0)}
-      <Navbar home={"Home"} />
       <div className="flex flex-col w-10/12 gap-3 mx-auto my-10 font-bold">
         <h1 className="text-5xl font-bold">Privacy Policy</h1>
         <h2 className="text-xl lg:text-2xl">

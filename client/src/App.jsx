@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import TandC from "./components/TandC";
 import JoinWaitlist from "./components/JoinWaitlist";
 import DeleteSection from "./components/DeleteSection";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -73,10 +74,13 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<StartPage />}></Route>
-        <Route path="/home" element={<Layout />}></Route>
-        <Route path="/t&c" element={<TandC />}></Route>
-        <Route path="/joinwaitlist" element={<JoinWaitlist />}></Route>
-        <Route path="/deleteprofile" element={<DeleteSection />}></Route>
+
+        <Route path="/" element={<Navbar />}>
+          <Route path="home" element={<Layout />} />
+          <Route path="t&c" element={<TandC />} />
+          <Route path="joinwaitlist" element={<JoinWaitlist />} />
+          <Route path="deleteprofile" element={<DeleteSection />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

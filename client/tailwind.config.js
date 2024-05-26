@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        tickertape: ["tickertape", "sans-serif"],
+        logoFont: ["logoFont", "sans-seref"],
+      },
+    },
   },
   plugins: [],
 };

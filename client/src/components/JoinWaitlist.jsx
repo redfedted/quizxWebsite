@@ -6,7 +6,6 @@ function JoinWaitlist() {
   return (
     <div>
       {" "}
-      <Navbar home={"Join"} />
       <div className="lg:mx-auto  lg:flex lg:items-center lg:justify-center lg:gap-[8rem]">
         <div className="hidden text-[4rem] font-bold lg:flex ">
           <h1>
