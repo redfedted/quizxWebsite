@@ -6,6 +6,7 @@ import TandC from "./components/TandC";
 import JoinWaitlist from "./components/JoinWaitlist";
 import DeleteSection from "./components/DeleteSection";
 import Navbar from "./components/Navbar";
+import QXClub from "./components/QXClub"; 
 
 function App() {
   return (
@@ -80,6 +81,7 @@ function App() {
           <Route path="t&c" element={<TandC />} />
           <Route path="joinwaitlist" element={<JoinWaitlist />} />
           <Route path="deleteprofile" element={<DeleteSection />} />
+          <Route path="/qxclub" element={<QXClub />} />
         </Route>
       </Routes>
     </BrowserRouter>

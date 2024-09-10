@@ -7,7 +7,9 @@ import { motion } from "framer-motion";
 const tabs = [
   { name: "Home", color: "#CF0804" },
   { name: "Join Waitlist", color: "#CF0804" },
+  { name: "QX Club", color: "#CF0804" }, // New Tab
 ];
+
 
 const duration = 0.3;
 
@@ -110,12 +112,17 @@ function Navbar({ home }) {
                 }}
               >
                 <Link
-                  to={i === 0 ? "/home" : "/joinwaitlist"}
-                  style={{ position: "relative", zIndex: 1 }}
-                  className={`   px-[1rem] py-[10rem]    `}
-                >
-                  {name}
-                </Link>
+  to={
+    i === 0 ? "/home" 
+    : i === 1 ? "/joinwaitlist" 
+    : "/qxclub"  // New route for QX Club
+  }
+  style={{ position: "relative", zIndex: 1 }}
+  className={`px-[1rem] py-[10rem]`}
+>
+  {name}
+</Link>
+
                 {i === selected && (
                   <motion.div
                     style={selectionStyle}
